@@ -86,10 +86,10 @@ Con esto ya está la configuración en github.
 
 ## Subir el proyecto al nuevo repo a github 
 
-En la terminal,  agrega el remoto: 
+En la terminal de VSC,  agrega el remoto: 
 
 ```bash
-$ git remote add origin git@github.com:mergutm/tiendita-app.git
+$ git remote add origin https://github.com/mergutm/tiendita-app.git
 ```
 
 Para subir el código:
@@ -110,6 +110,8 @@ Se intentará conectar a github generando un mensaje como el siguiente:
 ```
 Open [https://github.com/login/device](https://github.com/login/device) in a new tab and paste your one-time code: 1226-4FXA
 ```
+Abre github con tu cuenta y da autorización para poder subir el repo.
+
 
 Indicará que autorices la conexión desde visual studio code en el siguiente ejemplo la autorización es porque uso VSC dentro de Firebase studio.
 
