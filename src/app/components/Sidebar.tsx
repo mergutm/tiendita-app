@@ -8,13 +8,13 @@ const menuItems = [
     path: '/dashboard/main',
     icon: <IoBrowsersOutline size={40} />,
     title: 'Dashboard',
-    subTitle: 'Visualización'
+    subTitle: 'Productos'
   },
   {
     path: '/dashboard/counter',
     icon: <IoCalculator size={40} />,
-    title: 'Counter',
-    subTitle: 'Contador Client Side'
+    title: 'Contador',
+    subTitle: 'Client Side'
   },
 ]
 
@@ -38,7 +38,7 @@ export const Sidebar = () => {
 
 
       <div id="profile" className="px-6 py-10">
-        <p className="text-slate-500">Welcome back,</p>
+        <p className="text-slate-500">Bienvenido,</p>
         <a href="#" className="inline-flex space-x-2 items-center">
           <span>
             <Image className="rounded-full w-8 h-8" 
@@ -49,7 +49,7 @@ export const Sidebar = () => {
             />
           </span>
           <span className="text-sm md:text-base font-bold">
-            Fernando Herrera
+            Tiendita de Juguetes
           </span>
         </a>
       </div>
