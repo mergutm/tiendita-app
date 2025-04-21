@@ -96,12 +96,18 @@ Para subir el código:
 
 ```bash
 $ git branch -M main
-$ git push -u origin main
 
-The authenticity of host 'github.com (140.82.113.34)' can't be established.
-ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/gzLDA5zPMSvHdkr4UvCOqU.
-This key is not known by any other names.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+    $ git push -u origin main 
+Enumerating objects: 49, done.
+Counting objects: 100% (49/49), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (49/49), 63.64 KiB | 2.77 MiB/s, done.
+Total 49 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/mergutm/tiendita-app.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
 ```
 
 
