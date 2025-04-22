@@ -11,14 +11,13 @@ const respuesta = async (limit =5, offset = 0):Promise<SimplePokemon[]> => {
             id: pokemon.url.split('/').at(-2)!,
             name: pokemon.name
         })
-
     );
     return pokemons;
 }
 
 
 export default async function PokemonsPage(){
-    const lista = await respuesta(15)
+    const lista = await respuesta(55)
     //console.log(lista.results);
 
     return (
@@ -28,11 +27,11 @@ export default async function PokemonsPage(){
 
               {
                 lista.map((pokemon) => (                  
-                  <div key={pokemon.id}>
+                  <div key={pokemon.id} className="flex flex-col items-center">
                     <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`}
-                      width={80}
-                      height={80}
-                      alt = "imagen pokemon"
+                      width={120}
+                      height={120}
+                      alt = {pokemon.name}
                     />
                     <span >
 

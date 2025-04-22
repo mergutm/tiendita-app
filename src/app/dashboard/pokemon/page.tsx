@@ -18,7 +18,8 @@ const respuesta = async (limit =5, offset = 0):Promise<SimplePokemon[]> => {
 
 
 export default async function PokemonsPage(){
-    const lista = await respuesta(15)
+    const lista = await respuesta(35);
+
     //console.log(lista.results);
 
     return (
