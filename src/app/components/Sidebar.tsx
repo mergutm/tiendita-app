@@ -16,6 +16,12 @@ const menuItems = [
     title: 'Contador',
     subTitle: 'Client Side'
   },
+  {
+    path: '/dashboard/pokemons',
+    icon: <IoCalculator size={40} />,
+    title: 'Jugetes',
+    subTitle: 'Client Side'
+  },
 ]
 
 
