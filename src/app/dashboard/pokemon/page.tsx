@@ -23,26 +23,30 @@ export default async function PokemonsPage(){
 
     return (
         <div>
+            PokemonsPage
+
+            {
+                //JSON.stringify(lista)
+            }
+            <ul>
+
+            {
+              /*
+            lista.map((pokemon) => (
+              <li key={pokemon.name}>
+                {pokemon.name} <a href={pokemon.id}> Ver más</a>
+              </li>
+            ))*/
+          }
+            </ul>
+
             <div className='flex flex-column'>
               <div className="flex flex-wrap gap-10 items-center justify-center">
-
-              {
-                lista.map((pokemon) => (                  
-                  <div key={pokemon.id}>
-                    <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`}
-                      width={80}
-                      height={80}
-                      alt = "imagen pokemon"
-                    />
-                    <span >
-
-                      <a href={`https://pokeapi.co/api/v2/pokemon/${pokemon.id}/`}>{pokemon.name}</a>
-                    </span>
-                  </div>
-                ))
-
-              }
-                  
+                  <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg`}
+                    width={150}
+                    height={150}
+                    alt = "imagen pokemon"
+                  />
               </div>
 
             </div>
