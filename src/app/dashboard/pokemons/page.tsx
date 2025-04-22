@@ -1,6 +1,6 @@
 import { PokemonsReponse, SimplePokemon } from "@/app/pokemons";
 import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
-
+import Image from 'next/image';
 const respuesta = async (limit =5, offset = 0):Promise<SimplePokemon[]> => {
     //console.log(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`);
     const data: PokemonsReponse = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`)
@@ -26,18 +26,30 @@ export default async function PokemonsPage(){
             PokemonsPage
 
             {
-                JSON.stringify(lista)
+                //JSON.stringify(lista)
             }
             <ul>
 
             {
+              /*
             lista.map((pokemon) => (
               <li key={pokemon.name}>
                 {pokemon.name} <a href={pokemon.id}> Ver más</a>
               </li>
-            ))
+            ))*/
           }
             </ul>
+
+            <div className='flex flex-column'>
+              <div className="flex flex-wrap gap-10 items-center justify-center">
+                  <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg`}
+                    width={150}
+                    height={150}
+                    alt = "imagen pokemon"
+                  />
+              </div>
+
+            </div>
         </div>
     )
 }
