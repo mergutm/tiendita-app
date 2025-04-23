@@ -9,7 +9,6 @@ export default function PokemonPage () {
     );
   };
 
-
 ```
 
 
@@ -173,3 +172,4 @@ return (
 ```
 
 
+# Prueba con datos

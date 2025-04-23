@@ -2,7 +2,7 @@
 
 # Dependency directories & files
 # ------------------------------------------------------------------------------
-/node_modules
+/node_modules/
 /.pnp      # Yarn Plug'n'Play directory (if applicable)
 .pnp.* # Yarn Plug'n'Play files (like .pnp.cjs, .pnp.loader.mjs)
 /.yarn/* # Yarn Berry directory structure
