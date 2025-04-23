@@ -28,6 +28,12 @@ const menuItems = [
     title: 'Toys',
     subTitle: 'Pokemones'
   },
+  {
+    path: '/dashboard/pokemonv1',
+    icon: <IoCalculator size={40} />,
+    title: 'Pokemonv1',
+    subTitle: 'Pokemones'
+  }
 ]
 
 
