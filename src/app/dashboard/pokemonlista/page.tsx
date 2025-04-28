@@ -25,7 +25,12 @@ export default async function PokemonPage () {
         { 
          //JSON.stringify(data) 
          //data.map( item => <div key={item.id}>{item.name}</div>)
-          data.map( item => <PokemonItem key={item.id} {...item} />)
+          
+         //data.map( item => <PokemonItem key={item.id} {...item} />)
+          
+          data.map( item => <PokemonItem key={item.id} 
+            id={item.id} name={item.name}
+             />)
         }        
       </div>
     );
