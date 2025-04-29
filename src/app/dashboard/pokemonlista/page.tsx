@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { PokemonsReponse, SimplePokemon } from "@/app/pokemons";
 import { PokemonItem } from '@/app/components/PokemonItem';
 
-const getData = async(limit = 20, offset = 0):Promise<SimplePokemon[]> => {
+const getData = async(limit = 150, offset = 0):Promise<SimplePokemon[]> => {
   console.log(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`);
     const data:PokemonsReponse = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`)
     .then((response) => response.json())
