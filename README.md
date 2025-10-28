@@ -97,7 +97,7 @@ Para subir el código:
 ```bash
 $ git branch -M main
 
-    $ git push -u origin main 
+$ git push -u origin main 
 Enumerating objects: 49, done.
 Counting objects: 100% (49/49), done.
 Delta compression using up to 2 threads
